@@ -25,6 +25,7 @@ const ListBooks = () => {
   }, []);
 
   useEffect(() => {
+    document.title = "List Buku";
     if (fetchStatus) {
       fetchData();
     }

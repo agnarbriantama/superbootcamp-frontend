@@ -14,6 +14,7 @@ const ListCategory = () => {
   const [openModals, setOpenModals] = useState([]);
 
   useEffect(() => {
+    document.title = "List Kategori";
     const fetchData = async () => {
       try {
         const token = Cookies.get("token");

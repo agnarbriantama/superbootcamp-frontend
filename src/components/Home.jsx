@@ -6,6 +6,7 @@ const Home = () => {
   const [books, setBooks] = useState([]);
 
   useEffect(() => {
+    document.title = "Home";
     axios
       .get("http://localhost:8080/books")
       .then((response) => {

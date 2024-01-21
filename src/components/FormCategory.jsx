@@ -11,6 +11,7 @@ const FormCategory = () => {
   const { id } = useParams();
 
   useEffect(() => {
+    document.title = "Form Kategori";
     if (id) {
       axios
         .get(`http://localhost:8080/categories/${id}`)
