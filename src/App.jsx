@@ -10,6 +10,7 @@ import Sidebar from "./components/navbar/Sidebar";
 import Register from "./components/auth/Register";
 import PrivateRoutes from "./components/auth/PrivateRoute";
 import Footer from "./components/navbar/Footer";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
@@ -94,6 +95,16 @@ function App() {
               }
             />
           </Route>
+          <Route
+            path="*"
+            element={
+              <>
+                <Navbar />
+                <NotFound />
+                <Footer />
+              </>
+            }
+          />
         </Routes>
       </Router>
     </>
